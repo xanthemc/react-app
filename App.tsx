@@ -12,7 +12,7 @@ let printName: (name: string) => never; //void returns undefined, never doesnt r
 
 const App: React.FC = () => {
   const [todo, setTodo] = React.useState<string>('');
-
+  console.log(todo);
   return (
     <div className="App">
       <span className="heading">Taskify</span>
