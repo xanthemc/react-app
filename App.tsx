@@ -11,10 +11,12 @@ let printName: (name: string) => never; //void returns undefined, never doesnt r
 // let person: Object;
 
 const App: React.FC = () => {
+  const [todo, setTodo] = React.useState<string>('');
+
   return (
     <div className="App">
       <span className="heading">Taskify</span>
-      <InputField />
+      <InputField todo={todo} setTodo={setTodo} />
     </div>
   );
 };
