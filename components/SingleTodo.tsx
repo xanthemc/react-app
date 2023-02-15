@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
 import { MdDone } from 'react-icons/md';
-import { Todo } from '../models';
+import { Todo } from '../model';
 import { Draggable } from 'react-beautiful-dnd';
 
 const SingleTodo: React.FC<{
