@@ -1,19 +1,21 @@
 import * as React from 'react';
 type PersonListProps = {
-  name: {
+  names: {
     first: string;
     last: string;
   }[];
 };
-export const PersonList = (props) => {
+export const PersonList = (props: PersonListProps) => {
   return (
     <div>
-      {props.name.map((name) => {
-        return <h2></h2>;
+      {props.names.map((name) => {
+        return (
+          <h2 key={name.first}>
+            {name.first}
+            {name.last}
+          </h2>
+        );
       })}
-      {/* <h2>Bruce Wayne</h2>
-      <h2>Clark Kent</h2>
-      <h2>Princess</h2> */}
     </div>
   );
 };

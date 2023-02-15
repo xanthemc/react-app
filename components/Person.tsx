@@ -6,6 +6,10 @@ type PersonProps = {
     last: string;
   };
 };
-export const Person = (props) => {
-  return <div>{props.name}</div>;
+export const Person = (props: PersonProps) => {
+  return (
+    <div>
+      {props.name.first} {props.name.last}
+    </div>
+  );
 };
