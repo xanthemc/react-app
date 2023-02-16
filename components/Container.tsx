@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-export const Container = () => {
-  return (
-    <div style={{ border: '1px solid black', padding: '1rem' }}>
-      Text Content goes here
-    </div>
-  );
+type ContainerProps = {
+  styles: React.CSSProperties; //restrict to only css type
+};
+//pass styles as props
+export const Container = (props: ContainerProps) => {
+  return <div style={props.styles}>Text Content goes here</div>;
 };
