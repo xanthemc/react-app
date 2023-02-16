@@ -16,3 +16,7 @@ export const Input = (props: InputProps) => {
     // <input type="text" value={props.value} onChange={handleChange} />
   );
 };
+
+/* destructuring method */
+/* export const Input = ({value, handleChange}: InputProps) => {}); */
+/* this is becoz separate files with interface/type easier to handle due to complexity  */
